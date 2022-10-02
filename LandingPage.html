@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="LandingPage.css" />
+    <title>Arwa Alghamdi</title>
+
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1 class="name">Arwa <span class="white-text">Alghamdi</span></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#Home" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Home Section-->
+    <section id="Home">
+
+        <div class="main-content">
+            <div class="left-content">
+                <img class="logo" src="./images/Logo.PNG" alt="logo">
+            </div>
+            <div class="right-content">
+                <h2>Hi, I'm <br>
+                    <span class="auto">Arwa Alghamdi</span>
+                </h2>
+                <a href="#About">About Me</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--About Section-->
+    <section id="About">
+        <h1>About</h1>
+        <div class="about-content">
+            <div class="left">
+                <img class="logo" src="./images/Logo.PNG" alt="logo">
+            </div>
+            <div class="right">
+                <p class="about-p">
+                    I'm <span class="white-text">Arwa Alghamdi</span> a <span class="white-text">junior Front-End
+                        Developer.</span> I have bachelor degree in computer science from college
+                    of computers
+                    & information science from Umm-Alqura University in 2018. After that, I took some courses to develop
+                    my
+                    technical skills
+                    & soft skills. Also, I work on several projects to improve my skills using HTML, CSS & JS.
+                </p>
+                <a href="CV_Arwa Alghamdi_Update.pdf" target="_blank">Show my CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects Section-->
+    <section id="Projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="col">
+                <img src="./images/desktop-design.jpg" alt="project-view">
+                <h5>LandingPage</h5>
+                <p>Sample of landing page, I used HTML, CSS & JS</p>
+                <div class="links">
+                    <a href="https://cs-arwa.github.io/Landing-page/" target="_blank">View</a>
+                    <a href="https://github.com/CS-Arwa/Landing-page" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="./images/social-proof.jpg" alt="project-view">
+                <h5>social proof section master</h5>
+                <p>Sample of social proof, I used HTML, CSS & JS</p>
+                <div class="links">
+                    <a href=" https://cs-arwa.github.io/social-proof-section/" target="_blank">View</a>
+                    <a href="https://github.com/CS-Arwa/social-proof-section" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="./images/card-preview.jpg" alt="project-view">
+                <h5>3-column preview card</h5>
+                <p>create column cards, Language used HTML, CSS</p>
+                <div class="links">
+                    <a href="https://cs-arwa.github.io/3-column-preview-cards/" target="_blank">View</a>
+                    <a href="https://github.com/CS-Arwa/3-column-preview-cards" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="Contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
+            <form class="contact-form" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <textarea placeholder="Your message" id="message" name="message" rows="10" required></textarea>
+
+                <button type="submit" id="submit" name="submit">Send message</button>
+
+            </form>
+            <div id="error"></div>
+            <div id="message sent"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto", {
+            strings: ["Arwa Alghamdi", "Front-End Developer"],
+            typeSpeed: 60,
+            backSpeed: 70,
+            loop: true,
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h1 class="name">Arwa <span class="last-name">Alghamdi</span></h1>
+        </div>
+
+        <ul class="footer-nav">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./images/fiver.png" alt="LinkedIn">
+                </a>
+                </i>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./images/fiver.png" alt="GitHub">
+                </a>
+                </i>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./images/fiver.png" alt="Fiverr">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="./images/khmsat.png" alt="Khmsat">
+                </a>
+            </li>
+        </ul>
+
+        <div>
+            <p>@Copyright Arwa Alghamdi 2022</p>
+        </div>
+
+    </footer>
+</body>
