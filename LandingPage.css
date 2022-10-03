@@ -124,7 +124,9 @@ h4 {
 }
 
 .right-content a:hover {
-    background: var(--pink);
+    background: none;
+    border: 2px solid var(--Dark-Purple);
+    color: var(--Dark-Purple);
 }
 
 section {
@@ -160,10 +162,20 @@ button,
 .contact-container {
     background: var(--Light-Grey);
     width: 50%;
-    margin-top: 5rem;
     transform: translate(50%, 0);
     display: flex;
     justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    color: var(--White);
 }
 
 .contact-form {
@@ -258,7 +270,9 @@ textarea::placeholder {
 }
 
 .about-content a:hover {
-    background: var(--pink);
+    background: none;
+    border: 2px solid var(--Dark-Purple);
+    color: var(--Dark-Purple);
 }
 
 .projects-container {
@@ -322,7 +336,9 @@ textarea::placeholder {
 }
 
 .links a:hover {
-    background: var(--pink);
+    background: none;
+    border: 2px solid var(--Dark-Purple);
+    color: var(--Dark-Purple);
 }
 
 .footer {
