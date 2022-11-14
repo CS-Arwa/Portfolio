@@ -18,9 +18,9 @@
 html,
 body {
     background-color: var(--White);
-    /* height: 100vh; */
+    /* height: 100vh; 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
     color: var(--Dark-Purple);
     margin: 0;
     padding: 0;
@@ -78,7 +78,6 @@ a:hover {
 .left-content {
     width: 45%;
     padding: 0px 30px;
-    padding-left: 150px;
 }
 
 .left-content img {
@@ -107,10 +106,6 @@ h2 span {
 
 span {
     font-weight: 400;
-}
-
-h4 {
-    margin-bottom: 4em;
 }
 
 .right-content a {
@@ -377,6 +372,23 @@ ul.footer-nav {
     transition: color .4s ease;
 }
 
+.footer-icon {
+    font-size: 2em;
+    color: black;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.openMenu {
+    display: none;
+}
+
+.closeMenu {
+    display: none;
+}
+
 
 @media (max-width:500px) {
     .footer-nav ul {
@@ -384,4 +396,95 @@ ul.footer-nav {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
+    .left-content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .right-content h2 {
+        font-size: 3em;
+    }
+
+    .about-content {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    #nav.active #menu {
+        display: block;
+    }
+
+    .about-p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    section#Projects {
+        height: auto !important;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .main-content {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--Light-Grey);
+        transition: top 1s ease 0s;
+        display: none;
+        margin-top: 30px;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+        right: 20px;
+        position: absolute;
+    }
+}
+
+nav .mainMenu li a:hover {
+    background: none;
+    color: var(--White);
+}
+
+i.fa-solid.fa-xmark {
+    display: block;
+}
+
+i.fa-solid.fa-bars {
+    display: block;
 }
