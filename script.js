@@ -71,3 +71,5 @@ submitBtn.addEventListener('click', validate);
   backSpeed: 70,
   loop: true,
 });*/
+
+/*mobile menu */
