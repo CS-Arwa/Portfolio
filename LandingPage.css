@@ -292,6 +292,7 @@ textarea::placeholder {
     height: 15rem;
     background-size: cover;
     padding: 5px;
+    border-radius: 15px;
 }
 
 .col h5 {
