@@ -8,7 +8,8 @@
 :root {
     --White: hsl(0, 0%, 98%);
     --Dark-Purple: hsl(300, 37%, 32%);
-    --pink: hsl(300, 100%, 63%);
+    --pink: hsl(300, 37%, 50%);
+    /*--pink: hsl(300, 100%, 63%);*/
     --Light-Grey: #f5f5f7;
     /*font-family: 'Playfair Display', serif;*/
     /*font-family: 'Lora', serif;*/
@@ -149,6 +150,7 @@ section h1 {
     display: flex;
     justify-content: center;
     margin: 25px;
+    padding-top: 2em;
 }
 
 /* Contact Section*/
@@ -269,6 +271,10 @@ textarea::placeholder {
 }
 
 /*Projects Section */
+
+section#Projects {
+    height: auto;
+}
 
 .projects-container {
     display: grid;
